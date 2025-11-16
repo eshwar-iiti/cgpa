@@ -230,55 +230,55 @@
                         <td>CS 203/MA 213</td>
                         <td>Data Structures and Algorithms</td>
                         <td>3</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>CS 207N</td>
                         <td>Data Base & Information Systems</td>
                         <td>3</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>CS 209</td>
                         <td>Logic Design</td>
                         <td>3</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>CS 215</td>
                         <td>Mathematics for AI and ML</td>
                         <td>3</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>CS 253/MA 253</td>
                         <td>Data Structures and Algorithms Lab</td>
                         <td>1.5</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>CS 257</td>
                         <td>Data Base & Information Systems Lab</td>
                         <td>1.5</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>MA 205</td>
                         <td>Complex Analysis</td>
                         <td>2</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>MA 207</td>
                         <td>Differential Equations II</td>
                         <td>2</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                     <tr>
                         <td>MA 211/CS 201</td>
                         <td>Discrete Mathematical Structures</td>
                         <td>3</td>
-                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0" oninput="validateGrade(this)"></td>
+                        <td><input type="number" class="grade-input" min="0" max="10" step="0.01" value="0"></td>
                     </tr>
                 </tbody>
             </table>
@@ -302,15 +302,6 @@
     <script>
         let isUpdatingCombined = false;
         let isUpdatingIndividual = false;
-
-        function validateGrade(input) {
-            let value = parseFloat(input.value);
-            if (value > 10) {
-                input.value = 10;
-            } else if (value < 0) {
-                input.value = 0;
-            }
-        }
 
         function updateCombined() {
             if (isUpdatingIndividual) return;
